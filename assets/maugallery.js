@@ -56,11 +56,13 @@
         return;
       }
     });
-
+    
     $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
+    
     $(".gallery").on("click", ".mg-prev", () =>
       $.fn.mauGallery.methods.prevImage(options.lightboxId)
-    );
+  );
+
     $(".gallery").on("click", ".mg-next", () =>
       $.fn.mauGallery.methods.nextImage(options.lightboxId)
     );
@@ -150,7 +152,7 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i ;
+          index = i - 1; // Correction du bug image précédente.
         }
       });
       next =
@@ -189,7 +191,7 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i;
+          index = i + 1; // Correction du bug image suivante.
         }
       });
       next = imagesCollection[index] || imagesCollection[0];
