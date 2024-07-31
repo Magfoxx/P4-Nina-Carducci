@@ -239,11 +239,18 @@ form textarea {
 	height: 5em;
 	line-height: 2.5em;
 	font-size: 1.2em;
+	resize: none;
 }
 
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 100px;
 }
 
 @media all and (max-width: 1180px) {
