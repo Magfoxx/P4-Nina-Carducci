@@ -258,7 +258,7 @@
 
 		<div id="adress">
 			<span>68 avenue Alsace-Lorraine</span>
-			<span>Bordeaux</span>,
+			<span>Bordeaux,</span>
 			<span>33200</span>
 			<span>Nouvelle-Aquitaine</span>
 		</div>
@@ -269,6 +269,42 @@
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/scripts/maugallery.min.js" defer></script>
 	<script src="./assets/scripts/scripts.js" defer></script>
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": ["LocalBusiness", "Service"],
+			"name": "Nina Carducci",
+			"description": "Nina Carducci, photographe professionnelle à Bordeaux",
+			"image": "https://raw.githubusercontent.com/Magfoxx/P4-Nina-Carducci/main/assets/images/nina.webp",
+			"url": "https://magfoxx.github.io/P4-Nina-Carducci/",
+			"telephone": "0556677889",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"addressCountry": "FR"
+				},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "44.84658995503301",
+				"longitude": "-0.6065376300800295"
+			},
+			"openingHoursSpecification": {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"lundi",
+					"mardi",
+					"mercredi",
+					"jeudi",
+					"vendredi"
+				],
+				"opens": "10:00",
+				"closes": "19:00"
+			},
+			"priceRange" : "50€ - 400€"
+		}
+		</script>
 </body>
 
 </html>
