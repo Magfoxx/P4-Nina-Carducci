@@ -104,9 +104,9 @@ body {
 .nav-link{
 	cursor: pointer;
 }
-.nav-pills .nav-link.active-tag, .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active-tag, .nav-pills .show > .nav-link { /* Rajout du "-tag" */
 	color: #fff;
-	background-color: #7c7940;
+	background-color: #7c7940; /* Remplacement de la couleur */
 	border-radius:0 ;
 	cursor: pointer;
 }
